@@ -12,5 +12,17 @@ with sr.Microphone() as source:
 try:
     text = recognizer_instance.recognize_google(audio, language="it-IT")
     print("Ho capito \n", text)
+    go_up = ["Su","Vai su", "Scorri sopra","Vai in alto"]
+    textstr = str(text) 
+    if textstr in go_up:
+        pyautogui.press(["up"])
+    
+    go_down = ["Giù","Vai giù"]
+
 except Exception as e:
     print(e)
+
+
+
+
+
