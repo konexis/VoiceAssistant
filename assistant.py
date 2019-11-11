@@ -39,6 +39,16 @@ try:
             if textstr in stop:
                 exit(0)
 
+            change_tab = ["Cambia finestra","cambia finestra","cambia la finestra"]
+            if textstr in change_tab:
+                pyautogui.hotkey('altleft','tab')
+                pyautogui.press("enter")
+
+'''
+            digitation = ["Digita","digita","digitare"]
+            if textstr in digitation:
+                os.system("Digitation.py 1")'''
+
         except Exception as e:
             print(e)
 
@@ -46,5 +56,5 @@ try:
 
 
 except KeyboardInterrupt:
-    print("Exiting...")
+    print("\n\nExiting...")
     exit(0)
