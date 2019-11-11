@@ -1,5 +1,6 @@
 import speech_recognition as sr
 import os
+import sys
 import pyautogui
 
 
@@ -18,19 +19,19 @@ try:
             textstr = str(text) 
             
 
-            go_up = ["Su","Vai su", "Scorri sopra","Vai in alto"]
+            go_up = ["Su","Vai su", "Scorri sopra","Vai in alto","vai in alto","vai in basso"]
             if textstr in go_up:
                 pyautogui.press(["up"])
             
 
 
-            go_down = ["Giù","Vai giù"]
+            go_down = ["Giù","Vai giù","Vai in basso","vai in basso","vai giù"]
             if textstr in go_down:
                 pyautogui.press["down"]
 
 
 
-            press_enter = ["Invio","Enter"]
+            press_enter = ["invio","Invio","Enter"]
             if textstr in press_enter:
                 pyautogui.press(["enter"])
 
@@ -43,12 +44,7 @@ try:
             if textstr in change_tab:
                 pyautogui.hotkey('altleft','tab')
                 pyautogui.press("enter")
-
-'''
-            digitation = ["Digita","digita","digitare"]
-            if textstr in digitation:
-                os.system("Digitation.py 1")'''
-
+                       
         except Exception as e:
             print(e)
 
