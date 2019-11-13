@@ -7,9 +7,10 @@ import pyautogui
 try:
     while True:
         recognizer_instance = sr.Recognizer() 
-
+       
         with sr.Microphone() as source:
             recognizer_instance.adjust_for_ambient_noise(source)
+            os.system("clear")
             print("Sto ascoltando")
             audio = recognizer_instance.listen(source)
             print("Elaboro...")
@@ -18,18 +19,24 @@ try:
             
             textstr = str(text) 
             
-
             go_up = ["Su","Vai su", "Scorri sopra","Vai in alto","vai in alto","vai in basso"]
             if textstr in go_up:
                 pyautogui.press(["up"])
             
+            pageup = ["Pagina su","pagina su"] 
 
+            if textstr in pageup:
+                pyautogui.press("pageup")	    
 
             go_down = ["Giù","Vai giù","Vai in basso","vai in basso","vai giù"]
+
             if textstr in go_down:
-                pyautogui.press["down"]
+                pyautogui.press("down")
 
+            pagedown = ["Pagina giù","pagina giù","pagina giu","Pagina giu"] 
 
+            if textstr in pagedown:
+                pyautogui.press("pagedown")	    
 
             press_enter = ["invio","Invio","Enter"]
             if textstr in press_enter:
@@ -44,7 +51,17 @@ try:
             if textstr in change_tab:
                 pyautogui.hotkey('altleft','tab')
                 pyautogui.press("enter")
-                       
+
+            gotoend = ["Vai alla fine","vai alla fine", "scorri alla fine"]
+            if textstr in gotoend:
+                pyautogui.hotkey('ctrl','down')
+
+
+            gotobeginning = ["Vai all'inizio","vai all'inizio", "scorri all'inizio"]
+            if textstr in gotoend:
+                pyautogui.hotkey('ctrl','up')
+        
+        
         except Exception as e:
             print(e)
 
