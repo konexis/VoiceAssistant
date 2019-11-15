@@ -1,3 +1,6 @@
+#!/usr/bin/env/python3
+#coding=utf-8
+
 import speech_recognition as sr
 import os
 import sys
@@ -61,7 +64,14 @@ try:
             if textstr in gotoend:
                 pyautogui.hotkey('ctrl','up')
         
-        
+            magnify_up = ["Ingrandisci","ingrandisci","ingrandisci la pagina"]
+            if textstr in magnify_up:
+                pyautogui.hotkey('ctrl','+')    
+
+            magnify_down = ["Diminuisci zoom","diminuisci zoom","Ridurre","ridurre","Riduci","riduci"]
+            if textstr in magnify_down:
+                pyautogui.press("ctrl","-")
+
         except Exception as e:
             print(e)
 
