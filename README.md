@@ -13,3 +13,6 @@ This program uses serveral external modules. There are 3 kinds of them in this p
    Pillow
 # 3. AUDIO RECOGNIZING AND ANALYZING MODULES
    SpeechRecognition,PyAudio
+
+
+To make the script run normally, you must have installed modules listed in the [requirements.txt file](https://github.com/silviosanto6605/VoiceAssistant/blob/master/requirements.txt)
