@@ -22,6 +22,11 @@ try:
             
             textstr = str(text) 
             
+
+            tab = ["Tab","tab","tabulazione","Tabulazione"] 
+            if textstr in tab:
+                pyautogui.press("tab")
+
             go_up = ["Su","Vai su", "Scorri sopra","Vai in alto","vai in alto","vai in basso"]
             if textstr in go_up:
                 pyautogui.press(["up"])
