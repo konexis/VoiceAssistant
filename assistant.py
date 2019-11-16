@@ -63,14 +63,6 @@ try:
             gotobeginning = ["Vai all'inizio","vai all'inizio", "scorri all'inizio"]
             if textstr in gotoend:
                 pyautogui.hotkey('ctrl','up')
-        
-            magnify_up = ["Ingrandisci","ingrandisci","ingrandisci la pagina"]
-            if textstr in magnify_up:
-                pyautogui.hotkey('ctrl','+')    
-
-            magnify_down = ["Diminuisci zoom","diminuisci zoom","Ridurre","ridurre","Riduci","riduci"]
-            if textstr in magnify_down:
-                pyautogui.press("ctrl","-")
 
         except Exception as e:
             print(e)
