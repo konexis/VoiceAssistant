@@ -32,7 +32,7 @@ try:
             if textstr in tab_rev:
                 pyautogui.hotkey('shift','tab')
 
-            go_up = ["Su","Vai su", "Scorri sopra","Vai in alto","vai in alto","vai in basso"]
+            go_up = ["Su","Vai su", "Scorri sopra","Vai in alto","vai in alto"]
             if textstr in go_up:
                 pyautogui.press("up")
             
