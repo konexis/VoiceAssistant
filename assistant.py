@@ -27,12 +27,17 @@ try:
             if textstr in tab:
                 pyautogui.press("tab")
 
+
+            tab_rev = ["Tabulazione inversa","tabulazione inversa"]
+            if textstr in tab_rev:
+                pyautogui.hotkey('shift','tab')
+
             go_up = ["Su","Vai su", "Scorri sopra","Vai in alto","vai in alto","vai in basso"]
             if textstr in go_up:
-                pyautogui.press(["up"])
+                pyautogui.press("up")
             
-            pageup = ["Pagina su","pagina su"] 
 
+            pageup = ["Pagina su","pagina su"] 
             if textstr in pageup:
                 pyautogui.press("pageup")	    
 
