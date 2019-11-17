@@ -1,5 +1,5 @@
 # VoiceAssistant :smiley::microphone:
-A GUI vocal assistant
+A GUI vocal assistant for Linux and Mac Os
 
 
 
