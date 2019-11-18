@@ -22,7 +22,7 @@ try:
             
             textstr = str(text) 
             
-
+            
             tab = ["Tab","tab","tabulazione","Tabulazione"] 
             if textstr in tab:
                 pyautogui.press("tab")
@@ -73,6 +73,11 @@ try:
             gotobeginning = ["Vai all'inizio","vai all'inizio", "scorri all'inizio"]
             if textstr in gotoend:
                 pyautogui.hotkey('ctrl','up')
+
+
+            click = ["Clicca","clicca","pigia","Pigia"]
+            if textstr in click:
+                pyautogui.click()
 
         except Exception as e:
             print(e)
