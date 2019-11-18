@@ -75,7 +75,7 @@ try:
                 pyautogui.hotkey('ctrl','up')
 
 
-            click = ["Clicca","clicca","pigia","Pigia"]
+            click = ["Clicca","clicca","premi","Premi"]
             if textstr in click:
                 pyautogui.click()
 
