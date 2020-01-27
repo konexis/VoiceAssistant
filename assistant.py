@@ -4,9 +4,11 @@
 import speech_recognition as sr
 import os
 import pyautogui
-
-
+import platform
+import elevate
+elevate.elevate()
 try:
+
     while True:
         recognizer_instance = sr.Recognizer() 
        
@@ -80,6 +82,15 @@ try:
             click = ["Clicca","clicca","premi","Premi"]
             if textstr in click:
                 pyautogui.click()
+
+            shutdown = ["Spegni", "spegni", "spegni il computer", "shutdown"]
+            if textstr in shutdown:
+
+                if platform.system() == "Windows":
+                    os.system('''shutdown -s -t 20 -c "Triggered by VoiceAssistant" ''')
+
+                elif platform.system() == "Linux":
+                    os.system("sudo shutdown now")
 
         except Exception as e:
             print(e)
