@@ -73,6 +73,9 @@ try:
             if textstr in gotoend:
                 pyautogui.hotkey('ctrl','up')
 
+            exitwindow = ["Chiudi", "chiudi", "chiudi la finestra"]
+            if textstr in exitwindow:
+                pyautogui.hotkey('alt','f4')
 
             click = ["Clicca","clicca","premi","Premi"]
             if textstr in click:
