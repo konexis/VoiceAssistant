@@ -1,5 +1,5 @@
 # VoiceAssistant :smiley::microphone:
-A GUI vocal assistant for Linux and Mac Os
+A GUI vocal assistant
 
 
 
@@ -16,3 +16,6 @@ This program uses serveral external modules. There are 3 kinds of them in this p
 
 
 To make the script run normally, you must have installed modules listed in the [requirements.txt file](https://github.com/silviosanto6605/VoiceAssistant/blob/master/requirements.txt)
+Make sure to have installed first the required libraries.
+
+This program was tested on a normal python environment. Run it into a virtual environment is not recommended.
