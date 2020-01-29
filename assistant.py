@@ -85,12 +85,8 @@ try:
 
             shutdown = ["Spegni", "spegni", "spegni il computer", "shutdown"]
             if textstr in shutdown:
+                os.system('''shutdown -s -t 20 -c "Triggered by VoiceAssistant" ''')
 
-                if platform.system() == "Windows":
-                    os.system('''shutdown -s -t 20 -c "Triggered by VoiceAssistant" ''')
-
-                elif platform.system() == "Linux":
-                    os.system("sudo shutdown now")
 
         except Exception as e:
             print(e)

@@ -1,3 +1,4 @@
+elevate
 MouseInfo==0.1.2
 Pillow==6.2.1
 PyAudio==0.2.11
