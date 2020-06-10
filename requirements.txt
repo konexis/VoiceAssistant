@@ -1,6 +1,6 @@
 elevate
 MouseInfo==0.1.2
-Pillow==6.2.1
+Pillow==6.2.2
 PyAudio==0.2.11
 PyAutoGUI==0.9.48
 PyGetWindow==0.0.8
